@@ -7,4 +7,9 @@ router.get('/',(req,res) => {
     res.sendFile(file2Send);
 });
 
+router.get("/form_view", (req,res) => {
+    console.log(`GET keys: ${Object.keys(req.query)}`);
+    console.log(`GET values: ${Object.values(req.query)}`);
+});
+
 module.exports = router;
