@@ -34,7 +34,6 @@ router.get("/view_form", (req,res) => {
 
 router.post("/view_form", (req,res) => {
     let args = Object.keys(req.body);
-    console.log(args);
     thePage = "<!DOCTYPE html>";
     thePage += "<html>";
     thePage += "<head>"

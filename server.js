@@ -9,8 +9,8 @@ const app = express();
 // add a router
 const router = express.Router();
 
-router.use(express.json());
-//router.use(express.urlencoded());
+//router.use(express.json());
+router.use(express.urlencoded({extended: false}));
 
 // create API routes
 router.use("/", require("./api/index"));
