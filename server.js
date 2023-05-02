@@ -6,14 +6,11 @@ const PORT = 3000;
 // create the http app
 const app = express();
 
-// support URL encoded data
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// ...
-
 // add a router
 const router = express.Router();
+
+router.use(express.json());
+//router.use(express.urlencoded());
 
 // create API routes
 router.use("/", require("./api/index"));
