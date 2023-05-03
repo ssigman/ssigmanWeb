@@ -1,0 +1,10 @@
+:root {
+    --lightBack: #f6f4f2;
+    --darkBack: #425664;
+    --medium: #c6ad8f;
+}
+
+body {
+    background-color: var(--lightBack);
+    color: var(-darkBack);
+}

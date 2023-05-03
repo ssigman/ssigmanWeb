@@ -6,6 +6,11 @@ const PORT = 3000;
 // create the http app
 const app = express();
 
+// link the static files
+app.use('/images', express(__dirname + '/html/images'));
+app.use('/css',express.static(__dirname + '/html/css'))
+console.log(`Base path is: ${__dirname}`);
+
 // add a router
 const router = express.Router();
 
